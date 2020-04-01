@@ -4,38 +4,102 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-.board {
+* 		{ margin: 0; padding: 0}
+
+.header {
+	width: 630px;
+	height: 100px;
+	margin: 50px auto 0;
+}
+
+.header .logo, .header .search-box {
 	float: left;
 }
-span {
-    display: inline-block;
-    width: 470px;
-    height: 45px;
-    border: 2px solid #03cf5d;
-    background-color: #fff;
+  
+.header .logo {
+	width: 200px;
+	height: 48px;
+	text-indent: 200px;
+	font-size: 0;
+	overflow: hidden;
+	background: url('images/sp_search.svg') no-repeat -2px -6px;
 }
-span.naver_logo {
-    display: block;
-    overflow: hidden;
-    width: 198px;
-    height: 48px;
-    background-position: -4px -4px;
-    text-indent: 101%;
-    border: 0px solid;
-    white-space: nowrap;
-    background-image: linear-gradient(transparent,transparent),url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
-    background-repeat: no-repeat;
+
+.header .search-box {
+	border:3px solid #03CF5D;
+	width: 400px;
+	height: 50px;
+	margin-left:20px;
+}  
+
+.search-box a, .search-box input,.search-box button {
+	display: block;
+	float: left;
 }
+
+a.keyboard {
+	width: 29px;
+	height: 20px;
+	overflow: hidden;
+	margin-top: 12px;
+	margin-right: 3px;
+	background: url('images/sp_search.svg') no-repeat -30px -52px;
+	font-size: 0;
+}
+
+a.dropdown {
+	width: 18px;
+	height: 20px;
+	overflow: hidden;
+	margin-top: 11px;
+	margin-right: 5px;
+	background: url('images/sp_search.svg') no-repeat -85px -48px;
+	font-size: 0;
+}
+
+input {
+	width: 275px;
+	height: 40px;
+	outline: none;
+	border: none;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+button {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #03cf5d;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	font-size: 0;
+}
+
+span.maglass {
+	position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 20px;
+    height: 20px;
+    background: url('images/sp_search.svg') no-repeat -4px -60px;
+}
+
 </style>
 </head>
 <body>
-	<div class="board">
-		<h1><span class="naver_logo"></span></h1>
-	</div>
-	<div class="board">
-		<form>
-			<span></span>
-		</form>
+	<div class="header">
+		<h1 class='logo'>네이버</h1>
+		<div class='search-box'>
+			<input type='text' />
+			<a class="keyboard" href='#'>키보드</a>
+			<a class="dropdown" href='#'>드롭다운</a>
+			<button>
+				<span class="maglass">돋보기</span>
+			</button>
+		</div>
 	</div>
 </body>
 </html>
