@@ -22,7 +22,7 @@
 	text-indent: 200px;
 	font-size: 0;
 	overflow: hidden;
-	background: url('images/sp_search.svg') no-repeat -2px -4px;
+	background-position: -2px -4px;
 }
 
 .header .search-box {
@@ -43,7 +43,7 @@ a.keyboard {
 	overflow: hidden;
 	margin-top: 12px;
 	margin-right: 3px;
-	background: url('images/sp_search.svg') no-repeat -30px -52px;
+	background-position: -30px -52px;
 	font-size: 0;
 }
 
@@ -53,7 +53,7 @@ a.dropdown {
 	overflow: hidden;
 	margin-top: 11px;
 	margin-right: 5px;
-	background: url('images/sp_search.svg') no-repeat -85px -48px;
+	background-position: -85px -48px;
 	font-size: 0;
 }
 
@@ -86,18 +86,31 @@ span.maglass {
     left: 17px;
     width: 20px;
     height: 20px;
-    background: url('images/sp_search.svg') no-repeat -4px -60px;
+    background-position: -4px -60px;
 }
 
+.header .logo, a.keyboard, a.dropdown, span.maglass {
+	background-image: url('images/sp_search.svg');
+	background-repeat: no-repeat;
+}
 </style>
+<script>
+function onClickKeyboard() {
+	
+}
+
+function onClickKeyDropdown() {
+	
+}
+</script>
 </head>
 <body>
 	<div class="header">
 		<h1 class='logo'>네이버</h1>
 		<div class='search-box'>
 			<input type='text' />
-			<a class="keyboard" href='#'>키보드</a>
-			<a class="dropdown" href='#'>드롭다운</a>
+			<a class="keyboard" href='#' onclick="onClickKeyboard();">키보드</a>
+			<a class="dropdown" href='#' onclick="onClickDropdown();">드롭다운</a>
 			<button>
 				<span class="maglass">돋보기</span>
 			</button>
