@@ -6,5 +6,5 @@ Screenshots
 ![image](https://user-images.githubusercontent.com/59616862/78132746-40b88500-7458-11ea-929a-178b792a7ecf.png)
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/59616862/78134728-89be0880-745b-11ea-8a62-f7a1b8351203.png" width="50%">
+<img src="https://user-images.githubusercontent.com/59616862/78135338-b0c90a00-745c-11ea-89e8-e4fdd1433eb2.png" width="50%">
 </p>
