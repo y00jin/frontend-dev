@@ -8,11 +8,11 @@
 
 .header					{ width: 753px;	height: 100px; margin: 50px auto 0 }
 
-.logo, .search-box		{ float: left }
+.logo, .search_box		{ float: left }
   
 .logo 					{ width: 200px; height: 50px; background-position: -2px -4px }
 
-.search-box 			{ border:3px solid #03cf5d; width: 523px; height: 50px; margin-left:20px }
+.search_box 			{ border:3px solid #03cf5d; width: 523px; height: 50px; margin-left:20px }
 
 a, input, button 		{ display: block; float: left }
 
@@ -30,7 +30,7 @@ button					{ display: block; position: relative; width: 50px; height: 50px; back
 .hide					{ display: none }
 .maglass 				{ position: absolute; top: 15px; left: 17px; width: 20px; height: 20px; background-position: -4px -60px }
 
-.logo, a, .maglass 		{ background-image: url(images/sp_search.svg); background-repeat: no-repeat }
+.logo, a, .maglass 		{ background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg); background-repeat: no-repeat }
 </style>
 <script>
 var keyboardBool = true;
@@ -60,7 +60,7 @@ function onClickDropdown() {
 <body>
 	<div class="header">
 		<h1 class='logo'><span class="hide">네이버</span></h1>
-		<div class='search-box'>
+		<div class='search_box'>
 			<input type='text' />
 			<a id='keyboard' href='#' onclick="onClickKeyboard();">
 				<span class="hide">키보드</span>
