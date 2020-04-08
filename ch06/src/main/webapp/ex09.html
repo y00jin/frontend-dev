@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function() {
+	
+	// (표준+비표준) 속성 접근하기 위해서는 setAttribute 메소드를 사용한다.
+	var img = document.createElement('img');	
+	setTimeout(function(){
+		document.body.appendChild(img);
+		img.setAttribute('src','https://cdn.lolchess.gg/images/tft/companions/tooltip_penguknight_yellow_tier1.png');
+		img.setAttribute('width',500);
+		img.setAttribute('alt','병아리 깃털기사 내새꾸');
+		img.setAttribute('title','병아리 깃털기사 내새꾸');
+		img["data-name"] = '병아리 깃털기사 내새꾸';
+	},2000);
+});
+</script>
+</head>
+<body>
+	<h1>HTMLElement 속성 조작하기</h1>
+</body>
+</html>
