@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>ex04</title>
+<script type="text/javascript" src="./jquery/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+// jQuert object 알아보기
+$(function() {
+	var $obj = $('.par'); 
+	console.log($obj.length);
+	console.log(typeof($obj) + ":" + ($obj instanceof Array));
+	console.log($obj[0]); 		// jQuery Object가 아님. HTMLElement
+	console.log($obj.get(0));	// jQuery Object가 아님. HTMLElement
+
+	$obj.css("color","red");
+	$obj.click(function() {
+		// 이벤트 핸들러에서 this는 jQuery 객체가 아니다. HTML Element이다.
+		console.log("clicked:" + this);
+		
+		var $obj = $(this);
+		
+		// jQuery Object의 모든 메소드는 this에 해당되는 jQuery Object를 다시 반환한다.
+		// method chain이 가능하다
+		$obj.css("text-decoration","underline");
+		$obj.text('에옹에옹')
+		 
+	});
+});
+</script>
+</head>
+<body>
+	<h1 id='header'>dQuery 만들기</h1>
+	<p class="par">문장1</p>
+	<p>문장2</p>
+	<p class="par">문장3</p>
+	<p>문장4</p>
+</body>
+</html>
